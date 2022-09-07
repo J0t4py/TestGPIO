@@ -38,7 +38,7 @@ class Sensor(object):
     def end(self):
         gpio.cleanup()
                 
-sensor_1=Sensor(24, 25, "Front")
+sensor_1=Sensor(22, 12, "Front")
 while True:
             mm = sensor_1.sense()
             time.sleep(0.2)
